@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pink Boutique: moda femenina, elegante y a tu estilo.">
+  <title>Pink Boutique | Moda para dama</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="carrito.js" defer></script>
+</head>
+<body>
+  <div class="announcement">✨ ENVÍO GRATIS EN COMPRAS MAYORES A $999 MXN ✨</div>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Pink Boutique, inicio">
+      <span class="logo-mark">P</span>
+      <span>Pink <em>Boutique</em><small>MODA PARA DAMA</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-button" id="open-cart" type="button" aria-label="Ver carrito">
+      ♡ Carrito <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">NUEVA COLECCIÓN · 2026</p>
+        <h1>Tu estilo, tu esencia, <span>tu momento.</span></h1>
+        <p class="hero-description">Prendas que te hacen sentir bonita, segura y única. Encuentra ese look que habla de ti.</p>
+        <a class="button button-dark" href="#coleccion">Descubrir colección <span aria-hidden="true">→</span></a>
+        <div class="hero-note"><span>♡</span> Hecho para mujeres que brillan</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Inspiración de moda femenina en tonos rosados">
+        <div class="hero-label"><span>THE PINK EDIT</span><strong>Elegancia cotidiana</strong></div>
+      </div>
+      <div class="hero-sticker">FEEL<br>PRETTY <span>♡</span></div>
+    </section>
+
+    <section class="benefits" aria-label="Beneficios">
+      <div><span>✧</span><p><strong>Estilo único</strong><small>Looks para cada ocasión</small></p></div>
+      <div><span>♡</span><p><strong>Detalles que enamoran</strong><small>Elegidos con cariño</small></p></div>
+      <div><span>✿</span><p><strong>Compra fácil</strong><small>Tu favorito, a un clic</small></p></div>
+    </section>
+
+    <section class="collection section-wrap" id="coleccion">
+      <div class="section-heading">
+        <div><p class="eyebrow">ENCUENTRA TU FAVORITO</p><h2>La colección <span>Pink</span></h2></div>
+        <p>Prendas versátiles para crear combinaciones que te representen.</p>
+      </div>
+
+      <div class="category-tabs" role="group" aria-label="Filtrar productos">
+        <button class="category-tab active" data-filter="todos" type="button">Todo</button>
+        <button class="category-tab" data-filter="blusas" type="button">Blusas</button>
+        <button class="category-tab" data-filter="vestidos" type="button">Vestidos</button>
+        <button class="category-tab" data-filter="conjuntos" type="button">Conjuntos</button>
+        <button class="category-tab" data-filter="pantalones" type="button">Pantalones</button>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="blusas">
+          <div class="product-photo photo-blouse">
+            <img src="https://images.unsplash.com/photo-1564257577-0a5f3e6f7f9b?auto=format&fit=crop&w=800&q=85" alt="Blusa femenina en tono claro" loading="lazy">
+            <span class="product-tag">MÁS VENDIDO</span>
+            <button class="quick-add" type="button" aria-label="Agregar Blusa Aurora al carrito" data-name="Blusa Aurora" data-price="399">+</button>
+          </div>
+          <div class="product-info"><div><h3>Blusa Aurora</h3><p>Blusas · Rosa palo</p></div><strong>$399 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="vestidos">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=85" alt="Vestido elegante para dama" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Vestido Sofía al carrito" data-name="Vestido Sofía" data-price="799">+</button>
+          </div>
+          <div class="product-info"><div><h3>Vestido Sofía</h3><p>Vestidos · Elegante</p></div><strong>$799 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="conjuntos">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Conjunto de moda femenina" loading="lazy">
+            <span class="product-tag soft-tag">NUEVO</span>
+            <button class="quick-add" type="button" aria-label="Agregar Conjunto Olivia al carrito" data-name="Conjunto Olivia" data-price="899">+</button>
+          </div>
+          <div class="product-info"><div><h3>Conjunto Olivia</h3><p>Conjuntos · Casual chic</p></div><strong>$899 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="pantalones">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=85" alt="Pantalón de moda femenina" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Pantalón Siena al carrito" data-name="Pantalón Siena" data-price="599">+</button>
+          </div>
+          <div class="product-info"><div><h3>Pantalón Siena</h3><p>Pantalones · Corte amplio</p></div><strong>$599 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="blusas">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=800&q=85" alt="Prenda femenina para combinar" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Blusa Camille al carrito" data-name="Blusa Camille" data-price="459">+</button>
+          </div>
+          <div class="product-info"><div><h3>Blusa Camille</h3><p>Blusas · Básico elevado</p></div><strong>$459 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="vestidos">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85" alt="Vestido femenino de estilo moderno" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Vestido Amalia al carrito" data-name="Vestido Amalia" data-price="749">+</button>
+          </div>
+          <div class="product-info"><div><h3>Vestido Amalia</h3><p>Vestidos · Para ocasiones especiales</p></div><strong>$749 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="conjuntos">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=85" alt="Look coordinado para dama" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Set Valentina al carrito" data-name="Set Valentina" data-price="849">+</button>
+          </div>
+          <div class="product-info"><div><h3>Set Valentina</h3><p>Conjuntos · Look coordinado</p></div><strong>$849 MXN</strong></div>
+        </article>
+
+        <article class="product-card" data-category="pantalones">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=85" alt="Estilo femenino contemporáneo" loading="lazy">
+            <button class="quick-add" type="button" aria-label="Agregar Pantalón París al carrito" data-name="Pantalón París" data-price="629">+</button>
+          </div>
+          <div class="product-info"><div><h3>Pantalón París</h3><p>Pantalones · Estilo urbano</p></div><strong>$629 MXN</strong></div>
+        </article>
+      </div>
+      <p class="demo-note">* Catálogo de demostración: precios e imágenes ilustrativos. Puedes cambiarlos por los de tu tienda.</p>
+    </section>
+
+    <section class="quote-banner" id="nosotros">
+      <div class="quote-mark">“</div>
+      <p>La elegancia no consiste en llamar la atención,<br><em>sino en dejar una impresión bonita.</em></p>
+      <span>PINK BOUTIQUE · VISTE COMO TE SIENTES</span>
+    </section>
+
+    <section class="newsletter section-wrap" id="contacto">
+      <div><p class="eyebrow">HABLEMOS DE MODA</p><h2>Un poquito de <span>Pink</span> en tu día.</h2><p>¿Tienes dudas sobre una prenda? Escríbenos y con gusto te ayudamos.</p></div>
+      <a class="button button-dark" href="mailto:hola@pinkboutique.mx?subject=Consulta%20Pink%20Boutique">Contactar por correo ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#inicio">Pink <em>Boutique</em> ♡</a>
+    <p>Moda para dama con un toque de dulzura.</p>
+    <small>© 2026 Pink Boutique. Página demostrativa.</small>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden>
+    <section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-heading"><h2 id="cart-title">Tu carrito ♡</h2><button id="close-cart" class="close-cart" type="button" aria-label="Cerrar carrito">×</button></div>
+      <div id="cart-items" class="cart-items"><p class="empty-cart">Tu carrito está esperando algo bonito.</p></div>
+      <div class="cart-total"><span>Total</span><strong id="cart-total">$0 MXN</strong></div>
+      <button id="checkout-button" class="button button-dark checkout-button" type="button">Preparar pedido</button>
+      <p class="cart-help">Demostración escolar: este botón no procesa pagos reales.</p>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
